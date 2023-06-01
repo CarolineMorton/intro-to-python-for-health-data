@@ -178,6 +178,7 @@ The main takeaway here is that there are a lot of modules out there that can mak
 Packages are collections of functions and classes that are not included in the base Python installation. They are created by other developers and can be installed using the `pip` command. We will be using these packages throughout the course.
 
 ## Working with files
+
 There are various ways to read and write files in Python. We will just be concentration on reading in reference data to use in our function. We will be using the `csv` package to read in our data. This package is included in the base Python installation so we don't need to install it. We can import it using the `import` command:
 
 ```python
