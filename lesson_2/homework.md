@@ -2,7 +2,6 @@
 
 **Objective:** Refactor the `get_drug_group` function to make it more user-friendly by allowing users to provide their input directly and validate that input.
 
----
 #### Introduction to Python's `input` Function:
 
 We are going to build on what we have covered in the last 2 classes. We will be using the `input` function to prompt the user for input and validate it. 

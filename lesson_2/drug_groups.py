@@ -10,17 +10,18 @@ def get_drug_group(drug_name):
     Returns:
         str: The group of the drug.
     """
-    reference_data = csv.reader(open("drug_groups.csv"), delimiter=",")
     try:
+        print("we are in the try section")
+        reference_data = csv.reader(open("drug_groups.csv"), delimiter=",")
         drug_name = drug_name.lower()
         for row in reference_data:
             if drug_name in row:
                 return row[1]
+        
+        return "Unknown"
     except:
-        if type(drug_name) == str:
-            raise ValueError(f"Drug name: {drug_name} not found in reference data")
-        else:
-            raise ValueError(f"Drug name: {drug_name} is not a valid drug name")
+        print("there is an error here")
+        pass
 
-# print(get_drug_group(1))
 print(get_drug_group("penicillin"))
+print(get_drug_group(1))
